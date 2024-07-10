@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .content {
+            display: grid;
+            grid-template-rows: 0.5fr 2fr 0.5fr;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to right, rgb(82, 86, 85), rgba(3, 6, 7, 0.683));
+            padding: 30px;
+        }
+
+        .header {
+            background-color: rgb(32, 186, 119);
+            display: grid;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            color: #fff;
+        }
+
+        .container {
+            margin: 10px;
+        }
+
+        .footer {
+            display: grid;
+            margin: 10px;
+            background-color: rgb(32, 186, 119);
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        .division {
+            display: grid;
+            grid-template-columns: 0.4fr 2fr;
+            background-color: transparent;
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .aside {
+            background: linear-gradient(to right, rgb(58, 205, 102),rgba(0, 255, 238, 0.701));
+            margin: 10px;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .sub-container{
+            background-color: aqua;
+            background: linear-gradient(to right, rgb(58, 205, 102),rgba(0, 255, 238, 0.701));
+
+            margin: 10px;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .article{
+            display: grid;
+
+            justify-content: center;
+            align-items: end;
+        }
+        .image-container{
+            display: grid;
+
+            margin: 10px;
+            
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .img-1{
+            margin: 10px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            background-color: orange;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>Header</h1>
+        </div>
+        <div class="container">
+            <div class="division">
+                <div class="aside">
+                    <h1>Aside</h1>
+                </div>
+                <div class="sub-container">
+                    <div class="article">
+                        <h1>Article</h1>
+                    </div>
+                    <div class="image-container">
+                        <div class="img-1">image</div>
+                        <div class="img-1">image</div>
+                        <div class="img-1">image</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+
+</html>
