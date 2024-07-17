@@ -21,7 +21,7 @@
      <!-- ------NavBar------ -->
      <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl ">GREENDEN</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="icons" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="size-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
@@ -32,6 +32,22 @@
             <li><a href="./contact.html" class="hover:underline hover:text-black">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- -----sidenavber------- -->
+    <section id="sidenav" class="bg-green-200 p-5 fixed z-20 top-0 container" style="width: 50%; height: 100vh; right:-60%">
+        <div class="absolute right-5 top-5">
+        <svg id="moved" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </div>
+        <ul class="flex flex-col gap-10 justify-center items-center mt-10 text-gray-600  md:flex ">
+          <li><a href="./index.html" class="hover:underline hover:text-black">Home</a></li>
+          <li><a href="./product.html" class="hover:underline hover:text-black">Product</a></li>
+          <li><a href="./contact.html" class="hover:underline hover:text-black">Contact</a></li>
+        </ul>
+      </section>
 
     <form action="https://fabform.io/f/{form-id}" method="post">
         <section class="text-gray-600 body-font relative">
@@ -84,5 +100,6 @@
         <p>The Standard Chunk Of Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto impedit aliquam architecto cumque fugiat rem excepturi ipsum dolor voluptatum maiores!</p>
         <p>&copy;2021 Greenden.com</p>
       </section>
+      <script src="./contact.js"></script>
 </body>
 </html>
